@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import './gematria.dart' show calculateGematria;
+import '../server/gematria.dart' show calculateGematria;
 
 void main() {
   runApp(const MyApp());
@@ -59,7 +59,10 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Text(
               calculateGematria(_queryWord).toString()
-            )
+            ),
+            // ListView(
+
+            // ),
           ],
         ),
       ),
